@@ -17,7 +17,7 @@ defmodule One2.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/users", UserController, :index
+    resources "/users", UserController, only: [:index, :new, :create]
   end
 
   # Other scopes may use custom stacks.

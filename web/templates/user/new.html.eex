@@ -1,0 +1,25 @@
+<h2>Creating user</h2>
+<%= form_for @changeset, user_path(@conn, :create), fn f -> %>
+	<div class="form-group">
+		<%= text_input f, :first_name, placeholder: "First name", class: "form-controll" %>
+	</div>
+
+	<div class="form-group">
+		<%= text_input f, :second_name, placeholder: "Second name", class: "form-controll" %>
+	</div>
+
+	<div class="form-group">
+		<%= text_input f, :username, placeholder: "Username", class: "form-controll" %>
+	</div>
+
+	<div class="form-group">
+		<%= text_input f, :email, placeholder: "Email", class: "form-controll" %>
+	</div>
+
+	<div class="form-group">
+		<%= password_input f, :password, placeholder: "Password", class: "form-controll" %>
+	</div>
+
+	<%= submit "Create User", class: "btn btn-primary" %>
+
+<% end %>

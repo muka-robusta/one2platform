@@ -18,7 +18,7 @@ defmodule One2.User do
 		struct 
 		|> cast(params, [:first_name, :second_name, :username, :email, :password, :creation_date])
 		|> validate_required([:username, :email, :password])
-		|> unique_constraint([:username, :email])
+		#|> unique_constraint([:username, :email])
 	end
 
 end
