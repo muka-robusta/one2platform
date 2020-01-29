@@ -37,7 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 config :one2platform, One2.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "1",
   database: "one2platform_dev",
   hostname: "localhost",
   pool_size: 10
