@@ -34,7 +34,7 @@ defmodule One2.UserController do
 
 
 	defp generate_hashed_passkey(passkey, creation_date) do
-		IO.puts "-> " <> passkey <> " <-"
+
 		unhashed_passkey = (passkey <> Integer.to_string(creation_date) <> Base.encode64("1TWO", padding: false))
 		hashed_passkey = :crypto.hash(:sha256, unhashed_passkey) |> Base.encode64(padding: false)
 		hashed_passkey

@@ -24,15 +24,18 @@ form.link, form.button {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  // border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
-  width: 519px;
-  height: 71px;
+  width: 500px;
+  height: 140px;
   display: inline-block;
   margin-bottom: 1em;
-  background-image: url("/images/phoenix.png");
-  background-size: 519px 71px;
+  background-image: url("/images/one2storylogo2.png");
+  background-size: 500px 140px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
